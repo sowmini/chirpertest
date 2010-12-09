@@ -13,6 +13,10 @@ Chirperwebsite::Application.routes.draw do
 
   get "chirper/support"
 
+  get "chirper/apk"
+  
+  get "chirper/data"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
