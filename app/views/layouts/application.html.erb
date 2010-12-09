@@ -26,11 +26,10 @@
   
     <div id="login" class="boxed">
       <div class="content">
-        
         <form id="form1" method="post" action="#">
           <%= link_to "Download Data", { :controller => 'chirper', :action => 'data' }, :id => 'download' %>
           <br><br><br><br>
-          <%= link_to "Download APK", { :controller => 'chirper', :action => 'apk' }, :id => 'download' %>
+          <%= link_to "Download APK", { :controller => 'chirper', :action => 'home' }, :id => 'download' %>
         </form>
       </div>
     </div>
