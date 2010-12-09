@@ -22,11 +22,11 @@ class ChirperController < ApplicationController
   end
   
   def apk
-    send_file 'C:/rails_apps/ChirperOnline/public/downloads/test.docx', :type=>"application/doc"
+    send_file 'C:/rails_apps/chirperwebsite/public/downloads/test.docx'
   end
   
   def data
-    send_file 'C:/rails_apps/ChirperOnline/public/downloads/test.docx', :type=>"application/doc"
+    send_file 'C:/rails_apps/chirperwebsite/public/downloads/test.docx'
   end
   
 end
