@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChirperOnline</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<div id="logo">
+  <h1><i>Chirper</i></h1>
+</div>
+
+<div id="content">  
+  <div id="sidebar">
+    <div id="menu">
+      <ul>
+        <li class="active"><%= nav_link "Home", "chirper", "index" %> </li>
+        <li><%= nav_link "First Look", "chirper", "demo" %> </li>
+        <li><%= nav_link "Support", "chirper", "support" %> </li>
+        <li><%= nav_link "Downloads", "chirper", "downloads" %> </li>
+        <li><%= nav_link "Resources", "chirper", "resources" %></li>
+      </ul>
+    </div>
+  
+    <div id="login" class="boxed">
+      <div class="content">
+        
+        <form id="form1" method="post" action="#">
+          <%= link_to "Download Data", { :controller => 'chirper', :action => 'data' }, :id => 'download' %>
+          <br><br><br><br>
+          <%= link_to "Download APK", { :controller => 'chirper', :action => 'apk' }, :id => 'download' %>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <div id="main">
+    <div id="welcome" class="post">    
+      <p><img src="/images/img03.jpg" alt="" width="500" height="300" /></p>
+      <%= yield %>        
+    </div>
+  </div>
+</div>
+  
+<div id="footer">
+  <p id="legal">Copyright &copy; 2010 Chirper. All Rights Reserved. </p>
+  <p>Text and Images is available under the 
+    <a href= "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a>. See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Term of Use for details.</a> 
+  </p>
+  <p>
+  
+  </p>
+</div>
+
+</body>
+</html>

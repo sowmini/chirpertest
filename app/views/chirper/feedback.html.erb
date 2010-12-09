@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>ChirperOnline</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+	  <h2 class="title">Your Feedback</h2>
+	  	<br>
+			<div class="content">
+				<form id="form1" method="post" action="#">
+					<fieldset>
+					<legend><strong>Fill this Form</strong></legend><br>
+					<label for="inputtext1">Email Address *</label><br>
+					<input id="inputtext1" type="text" name="inputtext1" value="" />
+					<br><br>
+					<label for="inputtext2">Subject *</label><br>
+					<input id="inputtext2" type="password" name="inputtext2" value="" />
+					<br><br>
+					<label for="inputtext3">Description *</label><br>
+					<input id="inputtext3" type="text" name="inputtext3" value="" cols=40 rows=6 />
+					<br><br>
+					<input id="inputsubmit1" type="submit" name="inputsubmit1" value="Submit" />
+					<p></p>
+					</fieldset>
+				</form>
+				<p></p>
+				<p></p>
+			</div>
+	 
+</body>
+</html>
