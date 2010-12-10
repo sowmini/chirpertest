@@ -26,6 +26,6 @@ class ChirperController < ApplicationController
   end
   
   def data
-    send_file 'public/downloads/chirperdatabase.zip', :type=>"application/zip"
+    send_file 'public/downloads/images.zip', :type=>"application/doc"
   end
 end
