@@ -22,10 +22,10 @@ class ChirperController < ApplicationController
   end
   
   def apk
-    send_file 'public/downloads/Bird Data.zip', :type=>"application/doc"
+    send_file 'public/downloads/Bird Data.zip', :type=>"application/zip"
   end
   
   def data
-    send_file 'public/downloads/Bird Data.zip', :type=>"application/doc"
+    send_file 'public/downloads/Bird Data.zip', :type=>"application/zip"
   end
 end
