@@ -28,6 +28,9 @@
       <div class="content">
         <form id="form1" method="post" action="#">
           <%= link_to "Download Data", { :controller => 'chirper', :action => 'data' }, :id => 'download' %>
+            <li><input type="submit" value="Download Data" id="download" src="http://dl.dropbox.com/u/1391008/Bird%20Data.zip" /></li>
+            <li><input type="submit" value="Download APK" id="download" /></li>
+            <li></li>
           <br><br><br><br>
           <%= link_to "Download APK", { :controller => 'chirper', :action => 'home' }, :id => 'download' %>
         </form>
