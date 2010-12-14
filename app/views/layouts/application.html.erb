@@ -27,8 +27,9 @@
     <div id="login" class="boxed">
       <div class="content">
         <form id="form1" method="post" action="#">
-          <%= link_to "Download Data", { :controller => 'chirper', :action => 'data' }, :id => 'download' %>
-            <li><input type="submit" value="Download Data" id="download" src="http://dl.dropbox.com/u/1391008/Bird%20Data.zip" /></li>
+          <!--<%= link_to "Download Data", { :controller => 'chirper', :action => 'data' }, :id => 'download' %>-->
+            <li><a href="http://dl.dropbox.com/u/1391008/Bird%20Data.zip">Download Data</a></li>
+            <input type="submit" value="Download Data" id="download" src="http://dl.dropbox.com/u/1391008/Bird%20Data.zip" /></li>
             <li><input type="submit" value="Download APK" id="download" /></li>
             <li></li>
           <br><br><br><br>
