@@ -370,8 +370,13 @@ div.img
   }
   
 div.img img
-  {
+{
   display:inline;
   margin:3px;
   border:1px solid #ffffff;
-  }
+}
+
+td
+{
+  padding: 15px;	
+}
