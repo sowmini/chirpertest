@@ -359,21 +359,7 @@ img {
 
 /* Image Gallery */
 
-li.img_gallery_list 
-{ 
-	display: block;
-	float: left;
-	padding: 0;
-	margin: 0;
-} 
-
-#imagegallery 
-{ 
-	padding:0;
-	margin 0;
-}
-
-.img
+div.img
   {
   margin:2px;
   border:1px solid #0000ff;
@@ -383,14 +369,9 @@ li.img_gallery_list
   text-align:center;
   }
   
-.img img
+div.img img
   {
   display:inline;
   margin:3px;
   border:1px solid #ffffff;
-  }
-  
-.img a:hover img
-  {
-  border:1px solid #0000ff;
   }
